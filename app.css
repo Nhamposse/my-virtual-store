@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.conteudo{
+    flex: 1 0 auto;
+}
+.rodape{
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}

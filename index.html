@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link href="https://fonts.googleapis.com/
+        css2?family=Quicksand:wght@300&display=swap" 
+        rel="stylesheet">-->
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body onload="carregarProdutos()">
+   <header class="headContainer">
+        <div class="navBar">
+            <div class="logo">                
+                <a href="index.html"><img src="Logo/From_moz_logo.png" alt="" class="logo"></a>
+            </div> 
+            <div class="navList">       
+                <ul class="nacList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html"><div class="reg">Register</div></a></li>
+                    <li>
+                        <a href="#" class="a-links-cart" id="menu-cart">
+                            <div class="cart-wrap"><i class="fas fa-shopping-cart"></i> <span id="cart-quantity">0</span></div>
+                        </a>
+                    </li>
+                    <!-- <li><a href="#"><i class="fas fa-search" id="show_bar" onclick="showBar()"></i></a></li>
+                    <li><div id="search_container" class="hide">
+                        <div id="search_box">
+                            <input type="text" placeholder="Search" id="search_bar">
+                            <div class="icons">	
+                                <i class="fa fa-times" id="closeSearch" onclick="closeSearch()"></i>				
+                            </div>
+                        </div>
+                    </div></li>                     -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="hero"></div> 
+    
+<!------------------Category bar------------------------------------>
+        <div class="categoryBar">   
+            <ul>
+                <li><a href="" id="categorys-all">All Sneakers</a></li>
+                <li><a href="" id="categorys-adidas">Adidas</a></li>
+                <li><a href="" id="categorys-converce">Converce</a></li>
+                <li><a href="" id="categorys-nike">Nike</a></li>
+                <li><a href="" id="categorys-vans">Vans</a></li>
+            </ul>
+        </div>
+
+<!-------------------------All Categories-------------------------->
+    <div class="mainContant">
+        <div class="smallContainer">
+            <h2 class="title">All Sneakers</h2>
+            <div id="row">
+                <div id="cont_col">
+                    <!--<div class="col" id="add_to_cart" data-key="${index}"> 
+            
+                            <a href="singleproduct.html" target="_blank" class="a-tag"><img src="${product.img[0]}" id="item-img"></a>
+                            <h4 id="item-name">${product.name}</h4>
+                        
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price-and-btn">
+                            <p id="price">$${product.price.toFixed(2)}</p>
+                            <button type="submit" id="add-to-cart-btn">ADD TO CART</button>
+                        </div>        
+                    </div>-->
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------new release--------------->
+
+    <div class="newReleaseContainer">
+        <div class="releaseText">
+            <p>'Winterized'</p>
+            <h2>AIR JORDAN XIV</h2>
+            <button type="button" class="notifyMe">Notify Me</button>
+        </div>
+        <div class="imageNewRelease">
+            <img src="Images/Nike/Air Jordan 14 _Winterized_ (DO9406-200) Release Date._yyth/20150928_113304-2-1024x576.jpg" alt="">
+        </div>
+    </div> 
+
+    <!-------------------------brand--------------->
+
+    <div class="blandContainer">
+        <div class="row_brand">
+            <div class="col_1">
+                <img src="Logo/Adidas_logo.png">
+            </div>
+            <div class="col_1">
+                <img src="Logo/Air_Jordan_logo.png">
+            </div>
+            <div class="col_1">
+                <img src="Logo/Vans_logo.png">
+            </div>
+            <div class="col_1">
+                <img src="Logo/NikeFundoCnz.png">
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    <!-------------------------side bar cart--------------->
+    <div id="side-bar-container">
+    
+        <div id="side-bar-cart">
+            <div class="side-bar-header">
+                <h1 class="side-bar-title">CART</h1>
+                <i class="fas fa-times"></i>
+                <div class="separator_side_menu_header"></div>
+            </div>
+    
+            <div id="side-bar-items-cart">
+                <!-- <div class="cart_item_container">
+                    <div class="img_cart_container">
+                        <img src="Images/Adidas/700 Adidas Yeezy 700 Wave Runner B75571 - Fl/700_ADIDAS_YEEZY_700_WAVE_RUNNER_B75571_001.jpg">
+                    </div>
+                    <div class="title_price_container">
+                        <h3>Adidas Yeezy 700 Wave Runner B75571</h3>
+                        <p>$148.00</p>
+                    </div>
+                    <div class="qty_cart_container">
+                        <button class="subtract_qty">-</button>
+                        <div class="qty_display">1</div>
+                        <button class="subtract_qty">+</button>
+                    </div>
+                </div> -->
+            </div> 
+    
+            <div id="total-in-cart">
+                <div class="separator_side_menu_footer"></div>
+                <div class="total_and_price">                
+                    <h3>Total</h3> 
+                    <h4 id="total-price">$0</h4> 
+                </div>
+                <div class="checkout_btn">
+                    <button>CHECKOUT</button>
+                </div>                    
+            </div>        
+        </div>
+    </div>
+    
+
+    <!-------------------------Quick view--------------->
+    <div class="product_container">
+        
+    </div>
+    
+    <!-------------------------footer--------------->
+        <footer>
+            <div class="footerContainer">	
+                <div class="row_1">
+                    <div class="cols_2">
+                        <div class="colS">
+                            <a href="index.html"><img src="Logo/From_moz_logo.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="cols_2">
+                        <h3>MENU</h3>
+                        <ul class="footList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html"><div class="reg">Register</div></a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="cols_2">
+                        <h3>FOLLOW US</h3>
+                        <ul class="follow_us">
+                            <li><a href="https://pt-br.facebook.com/"  target="blank"><i class="fab fa-facebook-f"></i></a> </li>
+                            <li><a href="https://twitter.com/"  target="blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com"  target="blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="cols_2">
+                        <h3>JOIN US</h3>
+                        <ul class="footList">
+                            <p>Get all the latest information on New Releases,</p><br>
+                            <p>sales and Offers. Sign Up for newsletter today.</p>
+                        <ul class="footList">
+                        <div class="input_container">
+                            <input type="text" class="input_emailButton" placeholder="EMAIL ADDRESS">
+                            <br>
+                            <button type="submit"class="input_emailButton" >GO!</button>
+                        </div>                    
+                    </div>                
+                </div>
+
+                <div class="row_1">
+                    <div class="separator"></div>	
+                </div>
+        
+                <div class="row_1">
+                    <div class="copyright">
+                        <p>&copy2021 FMWS. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-------------------------modal--------------->
+
+        <div id="modal-product" class="modal-container" >
+           <!-- <div class="modal-item">
+                <div class="item-img">
+                    <img class="modal-img" src="${modelsJson[key].img}">
+                </div>
+                <div class="detail-area-modal">
+                    <h3 class="modal-title">Adidas Yeezy 700 Wave Runner B75571</h3>
+                    <div class="size-area">
+                        <h4 class="size-area-title">Select a size: <span class="input-size">40 EU</span></h4>
+                        <div class="sizes-option">
+                            <div class="size-modal">40 EU</div>
+                            <div class="size-modal">41 EU</div>
+                            <div class="size-modal">42 EU</div>
+                            <div class="size-modal">42,5 EU</div>
+                            <div class="size-modal">43 EU</div>
+                            <div class="size-modal">44 EU</div>
+                            <div class="size-modal">45 EU</div>
+                        </div>
+                    </div>
+                    <div class="price-qty">
+                        <div class="price">$148</div>
+                        <div class="qty-btn">
+                            <button class="item-qty-modal">-</button>
+                            <div class="qty-qty">1</div>
+                            <button class="item-qty-modal">+</button>
+                        </div>
+                        <div class="add-btn-container">
+                            <button class="add-btn-modal">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="modal-close-btn-div">
+                    <button class="modal-close"><i class="fas fa-times"></i></button>
+                </div>             
+            </div>-->
+        </div>
+    
+
+    <script src="script.js"></script>
+    <script src="models.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
